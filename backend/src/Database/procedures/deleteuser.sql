@@ -1,0 +1,23 @@
+-- USE xploraTours
+-- SELECT * from Users
+
+-- CREATE OR ALTER PROCEDURE deleteUser
+-- @email VARCHAR(200)
+-- AS
+-- BEGIN
+--     IF EXISTS (
+--         SELECT 1
+--         FROM Users
+--         WHERE email = @email
+--     )
+--         BEGIN
+--             DELETE FROM Users
+--             WHERE email = @email
+--             SELECT 1 AS DeletionResult; 
+--         END
+--     ELSE
+--         BEGIN
+--             SELECT -2 AS DeletionResult; 
+--         END
+-- END 
+

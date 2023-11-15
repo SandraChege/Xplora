@@ -1,0 +1,59 @@
+POST http://localhost/4500/user/register
+Content-Type: application/json
+
+{
+    "userName":"Sandra Chege",
+    "email":"9superbikes@gmail.com",
+    "password":"30000000",
+    "phone_no":"0700000000"
+}
+
+###login
+POST http://localhost:4600/user/login
+Content-Type: application/json
+
+{
+    "email":"9superbikes@gmail.com",
+    "password":"30000000"
+}
+
+###getallUsers
+GET http://localhost:4600/user/getallusers
+token:
+
+###checkuserdetails
+GET http://localhost:4600/user/checkuserdetails
+token:
+
+###getoneuser
+GET http://localhost:4600/user/getoneuser
+Content-Type: application/json
+
+{
+    "email": "9superbikes@gmail.com"
+}
+
+###updateuser
+POST http://localhost:4600/user/getoneuser
+Content-Type: application/json
+
+{
+    "email": "9superbikes@gmail.com",
+    "phone_no":"0700000000"
+}
+
+###deleteoneuser
+DELETE http://localhost:4600/user/deleteuser
+Content-Type: application/json
+
+{
+    "email": "9superbikes@gmail.com"
+}
+
+###updatepassword
+POST http://localhost:4600/user/updatepassword
+Content-Type: application/json
+
+{
+    "password": "12345678"
+}
