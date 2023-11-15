@@ -1,0 +1,116 @@
+.footer{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footer1{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "one two three four five";
+}
+.one{
+    grid-area: one;
+    margin-right: 1rem;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.footer1 div p{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.footer1 div h1{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--blue);
+}
+.footer1 div .phone{
+   color: var(--green);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.footer1 div h2{
+    color: var(--blue);
+    font-weight: 500;
+}
+.footer1 form{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer1 form input[type="email"]{
+    padding: 10px;
+    outline: none;
+    border: 2px solid var(--grey);
+    border-radius: 5px;
+}
+.footer1 form input[type = email]:hover{
+    border-color: var(--green);
+}
+.footer1 form input[type="submit"]{
+    background-color: aqua;
+    padding: 10px;
+    outline: none;
+}
+.footer .footerimages{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+
+.footer .footerimages img{
+    width: 18%;
+}
+.footer .footerimages img:hover{
+    transition: transform 0.3s ease-in-out; 
+    transform: scale(1.05);
+    /* background: rgba(0, 0, 0, 0.2); */
+}
+.footer2{
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+.footer2 span{
+    color: var(--blue);
+    font-weight: 800;
+}
+@media screen  and (max-width:860px){
+    .footer1{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer1 div{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    .footer .footerimages{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .footerimages img{
+    width: 80%;
+}
+    
+}

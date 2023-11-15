@@ -1,0 +1,24 @@
+#users{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#users div{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    padding: 2px;
+    width: 15rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightgreen);
+}
+#users div p{
+    padding-bottom: 10px;
+}
+#users div button{
+    background-color: var(--green);
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+}

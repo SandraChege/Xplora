@@ -1,0 +1,7 @@
+input[type=submit]{
+    background-color: #4CAF50;
+}
+div a{
+    color: var(--blue);
+    font-weight: 500;
+}

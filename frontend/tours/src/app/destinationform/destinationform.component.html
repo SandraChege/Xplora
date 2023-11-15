@@ -1,0 +1,31 @@
+<div class="flex justify-center items-center h-[100vh]">
+    <div class="registerUser" class="w-[30vw] flex flex-col justify-center m-4">
+    <h2 class="text-center mb-2 text-[2rem]">Add a destination</h2>
+
+    <form  class="flex flex-col my-4 mx-6">
+        <div class="flex flex-col py-1">
+            <label for=""class="text-[1rem]">Image:</label> 
+            <input type="text" placeholder="Image Url" class="rounded-[5px] border-solid border-[1px] border-gray-500 outline-none px-4 py-[4px] mt-[5px]">
+            <!-- <div *ngIf="registrationForm.get('userName')?.invalid && registrationForm.get('userName')?.touched" class="text-red-500">Name is required</div> -->
+        </div>
+        <div class="flex flex-col py-1 ">
+            <label for="" class="text-[1rem]">Destination Description</label>
+            <input type="email"  placeholder="Enter ydestination description" class="rounded-[5px] border-solid border-[1px] border-gray-500 outline-none px-4 py-[4px] mt-[5px]">
+            <!-- <div *ngIf="registrationForm.get('email')?.invalid && registrationForm.get('email')?.touched" class="text-red-500">Email is required</div> -->
+        </div>
+        <div class="flex flex-col py-1">
+            <label for="" class="text-[1rem]">Price</label>
+            <input type="text" placeholder="Enter the price" class="rounded-[5px] border-solid border-[1px] border-gray-500 outline-none px-4 py-[4px] mt-[5px]">
+            <!-- <div *ngIf="registrationForm.get('phone_no')?.invalid && registrationForm.get('phone_no')?.touched" class="text-red-500">Phone number is required</div> -->
+        </div>
+        <div class="flex flex-col py-1">
+            <label for="" class="text-[1rem]">Tour type</label>
+            <input type="text"  placeholder="Enter tour type" class="rounded-[5px] border-solid border-[1px] border-gray-500 outline-none px-4 py-[4px] mt-[5px]">
+        </div>
+        <div class="flex flex-col">
+            <input type="submit" value="Add Destination" class="rounded-[5px] rounded-[2px] border-solid border-[1px] border-blue-100 outline-none px-4 py-[6px] mt-[1rem] hover:cursor-pointer">
+        </div>
+    </form>
+</div>
+
+<!-- </div> -->

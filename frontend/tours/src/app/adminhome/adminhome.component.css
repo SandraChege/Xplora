@@ -1,0 +1,29 @@
+#users{
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+#users div{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    padding: 2px;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightgreen);
+}
+#users div p{
+    padding-bottom: 10px;
+}
+#users div .mybuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#users div button{
+    background-color: var(--green);
+    width: 40%;
+    padding: 10px;
+    border-radius: 8px;
+}

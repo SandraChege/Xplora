@@ -1,0 +1,43 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  color: var(--blue); 
+}
+.navigation p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.navlinks {
+  display: flex;
+  align-items: center;
+}
+.navlinks a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.navlinks a:hover{
+    color: #5EDDC0;
+}
+.navlinks .home{
+    color: #5EDDC0;
+}
+.navlinks .home:hover{
+    color: var(--blue);
+}
+button {
+  background-color: #4CAF50; 
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+

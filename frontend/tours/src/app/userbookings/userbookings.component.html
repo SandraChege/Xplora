@@ -1,0 +1,31 @@
+<app-userdashboard></app-userdashboard>
+<div class="flex justify-center flex-col items-center h-[100vh]">
+    <h2 class="text-center mb-2 text-[2rem]">Make a reservation</h2>
+    <div class="registerUser" class="w-[50vw] flex justify-center m-4">
+        <form  class="w-[45vw] flex flex-col my-4 mx-6">
+            <div class="flex flex-col py-1">
+                <label for="" class="text-[1rem]">Enter Phone Number</label>
+                <input type="text" placeholder="Enter your phone number" class="rounded-[5px] border-solid border-[1px] border-gray-500 outline-none px-4 py-[4px] mt-[5px]">
+                <!-- <div *ngIf="registrationForm.get('phone_no')?.invalid && registrationForm.get('phone_no')?.touched" class="text-red-500">Phone number is required</div> -->
+            </div>
+            <div class="flex flex-col py-1">
+                <label for="" class="text-[1rem]">Select Location</label>
+                <select class="rounded-[5px] border-solid border-[1px] border-gray-500 outline-none px-4 py-[4px] mt-[5px]">
+                    <option disabled>Choose Destination</option>
+                </select>
+                <!-- <div *ngIf="registrationForm.get('phone_no')?.invalid && registrationForm.get('phone_no')?.touched" class="text-red-500">Phone number is required</div> -->
+            </div>
+            <div class="flex flex-col py-1">
+                <label for="" class="text-[1rem]">From</label>
+                <input type="date" class="rounded-[5px] border-solid border-[1px] border-gray-500 outline-none px-4 py-[4px] mt-[5px]">
+            </div>
+            <div class="flex flex-col py-1">
+                <label for="" class="text-[1rem]">To</label>
+                <input type="date" class="rounded-[5px] border-solid border-[1px] border-gray-500 outline-none px-4 py-[4px] mt-[5px]">
+            </div>
+            <div class="flex flex-col">
+                <input type="submit" value="Book now" class="rounded-[5px] border-solid border-[1px] outline-none px-4 py-[6px] mt-[1rem] hover:cursor-pointer">
+            </div>
+        </form>
+    </div>    
+</div>
